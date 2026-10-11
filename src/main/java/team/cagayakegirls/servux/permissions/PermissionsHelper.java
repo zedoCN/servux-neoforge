@@ -45,7 +45,10 @@ public class PermissionsHelper {
         @Nullable PermissionNode<Boolean> permNode = PermissionHandler.getNode(node);
 
         if (permNode != null) {
-            return PermissionAPI.getPermission(player, permNode);
+            Boolean override = PermissionAPI.getPermission(player, permNode);
+            if (override != null) {
+                return override;
+            }
         }
 
         // Fall back to level-based permission check

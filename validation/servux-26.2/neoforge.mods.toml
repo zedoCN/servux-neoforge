@@ -1,0 +1,7 @@
+modLoader="javafml"
+loaderVersion="[10,)"
+license="Apache-2.0"
+[[mods]]
+modId="servux_repair_probe"
+version="1.0.0"
+displayName="Servux isolated regression probe"
